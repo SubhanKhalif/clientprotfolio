@@ -1,0 +1,50 @@
+body {
+    padding-top: 64px;
+}
+.fixed1-background {
+    position: relative;
+    background-image: url('https://via.placeholder.com/400');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh; /* Full viewport height */
+  }
+
+  .fixed2-background {
+    position: relative;
+    background-image: url('./assets/image1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+  }
+
+  /* Foreground content container */
+  .foreground-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5); /* Optional: Semi-transparent overlay */
+  }
+
+  .foreground-content h1, .foreground-content p {
+    margin: 0;
+    padding: 10px 20px;
+  }
+
+  /* Scrolling content after the fixed background */
+  .scroll-section {
+    padding: 50px;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+  }
+
