@@ -9,24 +9,26 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100">
-    <!-- Fixed Header -->
+  <!-- Fixed Header -->
     <header class="bg-white shadow-md py-4 px-6 fixed top-0 left-0 right-0 z-50">
         <div class="container mx-auto flex justify-between items-center">
             <h1 class="text-2xl font-bold text-gray-800">HARMEET KAUR</h1>
             <nav>
                 <ul class="flex space-x-6 text-gray-600 font-semibold">
                     <li><a href="#home" class="hover:text-gray-800">Home</a></li>
-                    <li><a href="#what-we-do" class="hover:text-gray-800">What We Do</a></li>
+                    <li><a href="./cources/cources.html" class="hover:text-gray-800">Cources</a></li>
                     <li><a href="#about" class="hover:text-gray-800">About</a></li>
-                    <li><a href="#contact" class="hover:text-gray-800">Contact</a></li>
+                    <li><a href="#Contact" class="hover:text-gray-800">Contact</a></li>
+                    <li><a href="demo.html" class="hover:text-gray-800">demo</a></li>
+                    <li><a href="#login/registration" class="hover:text-gray-800">login/registration</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
+  <!-- Hero Section -->
   <section class="home" id="home">
-    <div class="home h-screen relative bg-gray-100" id="home">
+    <div class="home h-[75vh] relative bg-gray-100" id="home">
       <div class="fixed1-background h-full w-full relative">
         <div class="absolute top-[65%] left-[70%] transform -translate-x-1/2 -translate-y-1/2">
           <div class="bg-white border-4 border-purple-900 p-6 rounded-lg shadow-lg">
@@ -38,6 +40,7 @@
       </div>
     </div>
   </section>
+  
     
   <!-- About Section -->
   <section class="about" id="about">
@@ -70,7 +73,7 @@
             <!-- Image Content -->
             <div class="relative">
                 <div class="border border-purple-700 p-4">
-                    <img src="https://via.placeholder.com/400" alt="HARMEET" class="w-full h-auto">
+                    <img src="https://via.placeholder.com/400" alt="HARMEET" class="w-auto h-auto">
                 </div>
                 <div class="mt-8">
                     <p class="text-gray-600 mb-4">— Hello Everyone —</p>
@@ -93,7 +96,8 @@
 
 
   <!--what we do section-->
-  <section class="py-16 bg-gray-100">
+  <section class="WhatWeDo" id="WhatWeDo"></section>
+  <div class="py-16 bg-gray-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-3xl font-extrabold text-center text-gray-800 mb-12">WHAT WE DO</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -137,7 +141,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
   <!--what we do section ends-->
 
 
@@ -216,7 +220,8 @@
       </div>
 
 <!--contact us section-->
-<section class="bg-purple-900 text-white font-sans">
+<section class="Contact" id="Contact">
+<div class=" bg-purple-900 text-white font-sans">
   <div class="py-12 px-6">
     <!-- Title -->
     <div class="text-center mb-8">
@@ -288,41 +293,48 @@
       <!-- Contact Info -->
       <div class="space-y-6">
         <div class="flex items-center space-x-4">
-          <span class="text-2xl">
-            <i class="fas fa-phone"></i>
-          </span>
-          <div>
-            <p class="font-semibold">Call Us</p>
-            <p>+91 xxxxxxxx</p>
-          </div>
+            <span class="text-2xl">
+                <i class="fas fa-phone"></i>
+            </span>
+            <div>
+                <p class="font-semibold">Call Us</p>
+                <p>+91 xxxxxxxx</p>
+            </div>
         </div>
         <div class="flex items-center space-x-4">
-          <span class="text-2xl">
-            <i class="fas fa-envelope"></i>
-          </span>
-          <div>
-            <p class="font-semibold">Mail Us</p>
-            <p>mail here</p>
-          </div>
+            <span class="text-2xl">
+                <i class="fas fa-envelope"></i>
+            </span>
+            <div>
+                <p class="font-semibold">Mail Us</p>
+                <p>mail here</p>
+            </div>
         </div>
         <div class="flex items-center space-x-4">
-          <span class="text-2xl">
-            <i class="fas fa-map-marker-alt"></i>
-          </span>
-          <div>
-            <p class="font-semibold">Visit Us</p>
-            <p>address here</p>
-          </div>
+            <span class="text-2xl">
+                <i class="fas fa-map-marker-alt"></i>
+            </span>
+            <div>
+                <p class="font-semibold">Visit Us</p>
+                <p>Empire State Building, New York, USA</p>
+                <!-- Embed Google Map -->
+                <a href="https://www.google.com/maps/search/?q=28.7041,77.1025" target="_blank">
+                  <iframe src="https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=28.7041,77.1025" 
+                          width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </a>
+            </div>
         </div>
         <div class="flex space-x-4">
-          <a href="#" class="text-xl"><i class="fab fa-facebook"></i></a>
-          <a href="#" class="text-xl"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="text-xl"><i class="fab fa-youtube"></i></a>
-          <a href="#" class="text-xl"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="text-xl"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-xl"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-xl"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="text-xl"><i class="fab fa-linkedin"></i></a>
         </div>
-      </div>
+    </div>
+    
     </div>
   </div>
+</div>
 </section>
 
 <!--contact us section ends-->

@@ -1,6 +1,10 @@
 body {
     padding-top: 64px;
 }
+
+#home{
+  max-height: 70%;
+}
 .fixed1-background {
     position: relative;
     background-image: url('https://via.placeholder.com/400');
@@ -47,4 +51,3 @@ body {
     color: black;
     font-size: 18px;
   }
-
