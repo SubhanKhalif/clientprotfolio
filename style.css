@@ -7,16 +7,17 @@ body {
 }
 .fixed1-background {
     position: relative;
-    background-image: url('https://via.placeholder.com/400');
+    background-image: url('');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    background-color: aquamarine;
     height: 100vh; /* Full viewport height */
   }
 
   .fixed2-background {
     position: relative;
-    background-image: url('./assets/image1.jpg');
+    background-image: url('');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

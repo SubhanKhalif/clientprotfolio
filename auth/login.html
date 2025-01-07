@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-xVVam1KS4+Qt2OrFa+VdRUoXygyKIuNWUUUBZYv+n27STsJ7oDOHJgfF0bNKLMJF" crossorigin="anonymous">
+</head>
+
+<body class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-500 to-green-500 text-white">
+  <div class="relative bg-white p-8 items-center rounded-lg shadow-lg w-full max-w-md">
+      <!-- Image Section -->
+      <div class="absolute -top-10 left-1/2 transform -translate-x-1/2">
+          <img src="https://via.placeholder.com/100" alt="Logo" class="w-30 h-30 rounded-full border-4 border-white shadow-md">
+      </div>
+
+      <!-- Form Section -->
+      <h2 class="text-2xl font-bold text-gray-800 mt-12 mb-6 text-center">Login</h2>
+      <p id="error-message" class="hidden text-red-500 text-sm mb-4 text-center"></p>
+      <form id="login-form" class="space-y-4">
+          <input
+              type="email"
+              id="email"
+              placeholder="Email"
+              required
+              class="w-full px-4 py-2 border rounded-lg text-black focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <div class="relative">
+              <input
+                  type="password"
+                  id="password"
+                  placeholder="Password"
+                  required
+                  class="w-full px-4 py-2 text-black border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+              <span
+                  id="toggle-password"
+                  class="absolute right-3 top-2 cursor-pointer text-gray-500"
+              >
+                  <i id="eye-icon" class="fas fa-eye"></i>
+              </span>
+          </div>
+
+          <button
+              type="submit"
+              class="w-full bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 rounded-lg transition duration-300"
+          >
+              Login
+          </button>
+      </form>
+      <p class="mt-4 text-center text-gray-600">
+          Don't have an account? 
+          <a href="/register" class="text-blue-500 hover:underline">Register</a>
+      </p>
+  </div>
+</body>
+</html>
