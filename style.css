@@ -7,7 +7,7 @@ body {
 }
 .fixed1-background {
     position: relative;
-    background-image: url('');
+    background-image: url('./assets/first.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -51,4 +51,15 @@ body {
     background-color: white;
     color: black;
     font-size: 18px;
+  }
+
+/* scrolling animation */
+
+  .animate-infinite-scroll {
+    animation: scroll 60s linear infinite;
+  }
+
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
   }

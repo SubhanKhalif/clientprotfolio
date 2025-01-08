@@ -10,7 +10,11 @@
 <body>
   <header class="bg-white shadow-md py-4 px-6 fixed top-0 left-0 right-0 z-50">
     <div class="container mx-auto flex justify-between items-center">
-        <h1 class="text-2xl font-bold text-gray-800">HARMEET KAUR</h1>
+      <h2 class="text-2xl font-bold text-gray-800 flex items-center">
+        <img src="../assets/logoo.jpg" alt="Logo" class="w-[60px] h-[60px] rounded-full border-4 border-white shadow-md mr-2">
+        HARMEET KAUR
+      </h2>
+      
         <nav>
             <ul class="flex space-x-6 text-gray-600 font-semibold">
                 <li><a href="../index.html" class="hover:text-gray-800">Home</a></li>
@@ -24,18 +28,18 @@
 
 <div class="cards h-[80vh]" id="cards">
   <!--card first-->
-  <div class="card-wrap">
+  <div class="card-wrap" onclick="redirectToPage('./CourseRegistration/abacus.html')">
     <div class="card-header one">
       <i class="fas fa-abacus"></i>
     </div>
     <div class="card-content">
       <h1 class="card-title">Abacus</h1>
       <p class="card-text">The <span class="font-bold">"Abacus"</span> course teaches mental arithmetic techniques using an ancient counting tool to enhance calculation speed and cognitive skills.</p>
-      <!--<button class="card-btn one">code</button>-->
-   </div>
+    </div>
   </div>
+
   <!--card second-->
-  <div class="card-wrap">
+  <div class="card-wrap" onclick="redirectToPage('./CourseRegistration/vedicmaths.html')">
     <div class="card-header two">
       <i class="fas fa-calculator"></i>
     </div>
@@ -46,7 +50,7 @@
    </div>
   </div>
   <!--card third-->
-  <div class="card-wrap">
+  <div class="card-wrap" onclick="redirectToPage('./CourseRegistration/robotics.html')">
     <div class="card-header three">
       <i class="fas fa-robot"></i>
     </div>
@@ -57,7 +61,7 @@
    </div>
   </div>
   <!--card four-->
-  <div class="card-wrap">
+  <div class="card-wrap" onclick="redirectToPage('./CourseRegistration/Lifecoach.html')">
     <div class="card-header four">
       <i class="fas fa-bullseye-arrow"></i>
     </div>
@@ -69,7 +73,7 @@
    </div>
   </div>
     <!--card five-->
-    <div class="card-wrap">
+    <div class="card-wrap" onclick="redirectToPage('./CourseRegistration/Social.html')">
       <div class="card-header five">
         <i class="fas fa-hands-helping"></i>
       </div>
@@ -89,7 +93,7 @@
 </section>
 
 
-
+<script src="script.js"></script>
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-xVVam1KS4+Qt2OrFa+VdRUoXygyKIuNWUUUBZYv+n27STsJ7oDOHJgfF0bNKLMJF" crossorigin="anonymous">
 
 </body>

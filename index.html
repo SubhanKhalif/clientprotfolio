@@ -12,7 +12,12 @@
   <!-- Fixed Header -->
     <header class="bg-white shadow-md py-4 px-6 fixed top-0 left-0 right-0 z-50">
         <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold text-gray-800">HARMEET KAUR</h1>
+          <h1 class="text-2xl font-bold text-gray-800 flex items-center">
+            <img src="./assets/logoo.jpg" alt="Logo" class="w-[60px] h-[60px] rounded-full border-4 border-white shadow-md mr-2">
+            HARMEET KAUR
+          </h1>
+          
+          
             <nav>
                 <ul class="flex space-x-6 text-gray-600 font-semibold">
                     <li><a href="#home" class="hover:underline">Home</a></li>
@@ -27,7 +32,7 @@
 
   <!-- Hero Section -->
   <section class="home" id="home">
-    <div class="home h-[75vh] relative bg-gray-100" id="home">
+    <div class="home h-[80vh] relative bg-gray-100" id="home">
       <div class="fixed1-background h-full w-full relative">
         <div class="absolute top-[65%] left-[70%] transform -translate-x-1/2 -translate-y-1/2">
           <div class="bg-white border-4 border-purple-900 p-6 rounded-lg shadow-lg">
@@ -71,9 +76,17 @@
 
             <!-- Image Content -->
             <div class="relative">
-                <div class="border border-purple-700 p-4">
-                    <img src="https://via.placeholder.com/400" alt="HARMEET" class="w-[45vh] h-[45vh]">
-                </div>
+              <div class="border border-purple-700 p-4">
+                <video 
+                src="./assets/1.mp4" 
+                class="h-auto w-auto" 
+                autoplay 
+                loop 
+                muted 
+                playsinline>
+            </video>
+            </div>
+            
                 <div class="mt-8">
                     <p class="text-gray-600 mb-4">— Hello Everyone —</p>
                     <div class="flex space-x-4">
@@ -211,12 +224,41 @@
         </div>
       </section>
 
-      <div class="relative bg-black" id="home"> 
-        <div class=" h-full w-full relative text-white">
-          <p class="text-9xl text-black text-center mb-3 text-white">,,</p>
-          <p class="text-center">Try not to become a man of success, but rather try to become a man of value.</p>
+      <!-- image scrolling-->
+      <section>
+        <div class="bg-dimBlue flex justify-center items-start">
+          <div class="xl:max-w-[1280px] w-full">
+            <h2 class="text-center mt-6 font-bold text-2xl">-- Our Activities --</h2>
+            <section class="flex justify-center items-center flex-row flex-wrap sm:mb-20 mb-6 mt-4">
+              <div class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
+                <u id="imageList" class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+                  <!-- Initial set of images -->
+                  <li><img src="./assets/scrollimage/1.jpg" alt="scrollimage" class="h-[20rem] w-[30rem]"></li>
+                  <li><img src="./assets/scrollimage/2.jpg" alt="scrollimage" class="h-[20rem] w-[30rem]"></li>
+                  <li><img src="./assets/scrollimage/3.jpg" alt="scrollimage" class="h-[20rem] w-[30rem]"></li>
+                  <li><img src="./assets/scrollimage/4.jpg" alt="scrollimage" class="h-[20rem] w-[30rem]"></li>
+                  <li><img src="./assets/scrollimage/5.jpg" alt="scrollimage" class="h-[20rem] w-[30rem]"></li>
+                  <li><img src="./assets/scrollimage/6.jpg" alt="scrollimage" class="h-[20rem] w-[30rem]"></li>
+                  <li><img src="./assets/scrollimage/7.jpg" alt="scrollimage" class="h-[20rem] w-[30rem]"></li>
+                  <li><img src="./assets/scrollimage/8.jpg" alt="scrollimage" class="h-[20rem] w-[30rem]"></li>
+                  <li><img src="./assets/scrollimage/9.jpg" alt="scrollimage" class="h-[20rem] w-[30rem]"></li>
+                  <li><img src="./assets/scrollimage/10.jpg" alt="scrollimage" class="h-[20rem] w-[30rem]"></li>
+                  <li><img src="./assets/scrollimage/1.jpg" alt="scrollimage" class="h-[20rem] w-[30rem]"></li>
+                  <li><img src="./assets/scrollimage/2.jpg" alt="scrollimage" class="h-[20rem] w-[30rem]"></li>
+                  <li><img src="./assets/scrollimage/3.jpg" alt="scrollimage" class="h-[20rem] w-[30rem]"></li>
+                  <li><img src="./assets/scrollimage/4.jpg" alt="scrollimage" class="h-[20rem] w-[30rem]"></li>
+                  <li><img src="./assets/scrollimage/5.jpg" alt="scrollimage" class="h-[20rem] w-[30rem]"></li>
+                  <li><img src="./assets/scrollimage/6.jpg" alt="scrollimage" class="h-[20rem] w-[30rem]"></li>
+                  <li><img src="./assets/scrollimage/7.jpg" alt="scrollimage" class="h-[20rem] w-[30rem]"></li>
+                  <li><img src="./assets/scrollimage/8.jpg" alt="scrollimage" class="h-[20rem] w-[30rem]"></li>
+                  <li><img src="./assets/scrollimage/9.jpg" alt="scrollimage" class="h-[20rem] w-[30rem]"></li>
+                  <li><img src="./assets/scrollimage/10.jpg" alt="scrollimage" class="h-[20rem] w-[30rem]"></li>
+                </u>
+              </div>
+            </section>
+          </div>
         </div>
-      </div>
+      </section>
 
 <!--contact us section-->
 <section class="Contact" id="Contact">
@@ -272,13 +314,13 @@
           />
         </div>
         <div class="mb-6">
-          <label class="block text-sm font-medium mb-2" for="business">Your Business</label>
+          <label class="block text-sm font-medium mb-2" for="business">comment</label>
           <input
             class="w-full border rounded-lg px-4 py-2 focus:ring-purple-600 focus:outline-none"
-            type="text"
-            id="business"
-            name="business"
-            placeholder="Enter your business name"
+            type="long-text"
+            id="comment"
+            name="comment"
+            placeholder="Enter comments"
           />
         </div>
         <button
@@ -360,10 +402,12 @@
       </div>
 
       <!-- Copyright Section -->
-      <p class="text-xs text-gray-400">&copy; 2025; Designed by <span>TECHSPOT INFOTECH LLP</span></p>
+      <p class="text-xs text-gray-400">Copyright &copy; 2025; Harmeet Kour <br>Designed by <span>TECHSPOT INFOTECH LLP</span></p>
   </div>
 
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
