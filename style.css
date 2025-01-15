@@ -2,6 +2,10 @@ body {
     padding-top: 64px;
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 #home{
   max-height: 70%;
 }
@@ -56,7 +60,7 @@ body {
 /* scrolling animation */
 
   .animate-infinite-scroll {
-    animation: scroll 60s linear infinite;
+    animation: scroll 70s linear infinite;
   }
 
   @keyframes scroll {
