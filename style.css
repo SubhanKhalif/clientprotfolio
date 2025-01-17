@@ -67,3 +67,14 @@ body {
     0% { transform: translateX(0); }
     100% { transform: translateX(-100%); }
   }
+
+  .hover1 {
+    text-decoration: none;
+    color: #f9fbfc; /* Default link color */
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+  }
+
+  .hover1:hover {
+    color: #a6cdf7; /* Darker shade on hover */
+    text-decoration: underline; /* Underline effect */
+  }
